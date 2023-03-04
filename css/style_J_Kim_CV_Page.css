@@ -1,0 +1,32 @@
+/* body {
+  margin: 0;
+} */
+/* div {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 22px;
+} */
+
+.btn-color {
+  background-color: #80b7f1;
+}
+
+.white-box {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+
+.pill {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  padding: 3px 12px 5px 12px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+}
