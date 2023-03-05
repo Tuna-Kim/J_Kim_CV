@@ -30,3 +30,16 @@ h4 {
   margin-right: 2px;
   margin-bottom: 5px;
 }
+
+.profile-pic {
+  height: 180px;
+  width: 180px;
+  border-radius: 70%;
+}
+
+@media only screen and (max-width: 480px) {
+  .profile-pic {
+    height: 120px;
+    width: 120px;
+  }
+}
