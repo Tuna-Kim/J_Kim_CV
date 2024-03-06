@@ -32,14 +32,14 @@ h4 {
 }
 
 .profile-pic {
-  height: 180px !important;
-  width: 180px !important;
+  height: 250px !important;
+  width: 250px !important;
   border-radius: 70% !important;
 }
 
 @media only screen and (max-width: 480px) {
   .profile-pic {
-    height: 120px !important;
-    width: 120px !important;
+    height: 180px !important;
+    width: 180px !important;
   }
 }
