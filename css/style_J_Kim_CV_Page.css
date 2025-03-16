@@ -1,40 +1,29 @@
-/* body {
-  margin: 0;
-} */
-/* div {
-  box-sizing: border-box;
-}
-h1 {
-  font-size: 30px;
-}
-h4 {
-  font-size: 22px;
-} */
-
-.btn-color {
-  background-color: #80b7f1;
+/* General adjustments */
+body {
+  background: #f7f9fc;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .white-box {
   background: white;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0.5px 0.5px 2px 1px #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.pill {
-  display: inline-block;
-  border: 1px solid lightgray;
-  border-radius: 100px;
-  padding: 3px 12px 5px 12px;
-  margin-right: 2px;
-  margin-bottom: 5px;
+/* Typography */
+h2, h3, h4, h5 {
+  font-weight: 600;
+  color: #333;
 }
 
+/* Profile Picture */
 .profile-pic {
   height: 250px !important;
   width: 250px !important;
   border-radius: 70% !important;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 480px) {
@@ -42,4 +31,36 @@ h4 {
     height: 180px !important;
     width: 180px !important;
   }
+}
+
+/* Pill buttons for skills and tags */
+.pill {
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  padding: 3px 12px 5px 12px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.pill:hover {
+  background-color: #5a9be0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Button color */
+.btn-color {
+  background-color: #80b7f1;
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.btn-color:hover {
+  background-color: #5a9be0;
+}
+
+/* Navigation styling (overrides for navbar if needed) */
+.navbar-brand, .nav-link {
+  font-weight: 600;
 }
