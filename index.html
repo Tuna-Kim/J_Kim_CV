@@ -1,234 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style_J_Kim_CV_Page.css" />
-    <title>Portfolio - Dr. Jihwan Kim</title>
-    <style>
-      /* Additional in-page CSS for smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body style="background: #f7f9fc">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #80b7f1, #5a9be0);">
-      <div class="container">
-        <a class="navbar-brand" href="#">Dr. Jihwan Kim</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jihwan Kim — physical oceanographer and analytics professional connecting ocean science, predictive modeling, and sustainable fisheries. Based in Tokyo, Japan.">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta property="og:title" content="Jihwan Kim · Ocean Science & Analytics">
+  <meta property="og:description" content="Connecting ocean science to better decisions. Research, fisheries intelligence, and data-driven operations.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style_J_Kim_CV_Page.css">
+  <script src="js/main.js" defer></script>
+  <title>Jihwan Kim · Ocean Science & Analytics</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#about" aria-label="Jihwan Kim, home">JK<span class="wordmark-dot">.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" type="button">Menu <span aria-hidden="true">+</span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#about" aria-current="location">About</a>
+        <a href="#work">Selected work</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#contact" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line" aria-hidden="true"></span> Ocean science · Data & analytics</p>
+        <h1 id="hero-title">Jihwan Kim<span class="name-period">.</span></h1>
+        <p class="hero-role">Physical oceanographer.<br>Applied analytics professional.</p>
+        <p class="hero-description">I connect ocean science with predictive modeling and geospatial data to support sustainable fisheries and better operational decisions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#cv">Download CV <span aria-hidden="true">↓</span></a>
         </div>
+        <p class="hero-location"><span class="location-dot" aria-hidden="true"></span> Based in Tokyo, Japan <span class="location-divider">/</span> Working across oceans</p>
       </div>
-    </nav>
+      <div class="hero-visual">
+        <svg class="ocean-lines" viewBox="0 0 500 550" fill="none" aria-hidden="true">
+          <g stroke="currentColor" stroke-width="1">
+            <path d="M80 30C380-30 460 160 370 255S220 380 485 495"/>
+            <path d="M58 40C360-20 435 160 350 255S200 390 465 510"/>
+            <path d="M36 50C340-10 410 160 330 255S180 400 445 525"/>
+            <path d="M14 60C320 0 385 160 310 255S160 410 425 540"/>
+            <path d="M-8 70C300 10 360 160 290 255S140 420 405 555"/>
+            <path d="M-30 80C280 20 335 160 270 255S120 430 385 570"/>
+          </g>
+        </svg>
+        <figure class="portrait">
+          <img src="img/Jihwan_Kim_Portrait.jpg" alt="Portrait of Jihwan Kim against a dark blue background" width="864" height="1090" fetchpriority="high">
+          <figcaption><span>JIHWAN KIM, Ph.D.</span><span>Tokyo, JP</span></figcaption>
+        </figure>
+        <div class="portrait-note"><span class="note-symbol" aria-hidden="true">↗</span><span>From scientific insight<br>to practical impact.</span></div>
+      </div>
+    </section>
 
-    <div class="container" style="padding-top: 80px;">
-      <!-- About Section -->
-      <section id="about" class="white-box mb-4">
-        <div class="row">
-          <!-- Profile Picture -->
-          <div class="col-md-4 col-12 d-flex justify-content-center align-items-center mb-3">
-            <img src="img/J_Kim_Profile_Pic.jpg" class="profile-pic" alt="Profile Picture" />
-          </div>
-          
-          <!-- Profile Info -->
-          <div class="col-md-8 col-12">
-            <h2>Dr. Jihwan Kim</h2>
-            <p class="lead">Physical Oceanographer & Fisheries Scientist</p>
-            <p>
-              Ocean Engineer at Collecte Localisation Satellites<br />
-              Data & Fisheries Science Advisor at the North Pacific Fisheries Commission<br />
-              Dedicated to advancing sustainable fisheries through innovative data science and oceanographic research.
-            </p>
-            
-            <div class="mt-3">
-              <a href="CV_J_Kim.pdf" class="btn btn-color">Download Full CV</a>
-            </div>
-            
-            <hr />
-            
-            <div class="mt-2">
-              <a href="mailto:tho3ov@gmail.com" class="text-decoration-none me-3">tho3ov@gmail.com</a>
-              <a href="mailto:jkim@groupcls.com" class="text-decoration-none me-3">jkim@groupcls.com</a>
-              <a href="mailto:jkim@npfc.int" class="text-decoration-none">jkim@npfc.int</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education & Research Interests -->
-      <section id="education" class="white-box mb-4">
-        <h3>Education & Research Interests</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <h5>Education</h5>
-            <ul>
-              <li>
-                <strong>Ph.D. in Physical Oceanography</strong><br />
-                Seoul National University (2019–2023)<br />
-                <small>Graduated as the youngest and fastest to complete the Ph.D. in Korea.</small>
-              </li>
-              <li class="mt-2">
-                <strong>B.S. in Earth Science Education</strong><br />
-                Seoul National University (2013–2018)<br />
-                <small>Including Compulsory Military Service (2015–2016).</small>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h5>Research Interests</h5>
-            <ul>
-              <li>Pelagic fisheries & upper-ocean current systems in the Northwestern Pacific</li>
-              <li>Statistical forecasting methods for fisheries and environmental data</li>
-              <li>Machine learning applications for sustainable fishing, including super-resolution and forecasting future fishing grounds</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="white-box mb-4">
-        <h3>Experience</h3>
-
-        <!-- Experience Block 1: Ocean Engineer -->
-        <div class="mb-4">
-          <h5>Ocean Engineer, Sustainable Fisheries Management Team<br /><small>Collecte Localisation Satellites (CLS) – France & Japan (2025– )</small></h5>
-          <ul>
-            <li>Directed oceanographic analysis to optimize tuna fishing vessel operations, ensuring compliance with safety regulations and sustainable practices.</li>
-            <li>Utilized real-time ocean data and predictive modeling to monitor vessel performance and enhance operational efficiency.</li>
-            <li>Played a key role in designing and implementing the CATSAT system—a satellite-based fisheries monitoring solution.</li>
-          </ul>
-        </div>
-
-        <!-- Experience Block 2: Data & Fisheries Science Advisor -->
-        <div class="mb-4">
-          <h5>Data & Fisheries Science Advisor<br /><small>North Pacific Fisheries Commission (2024– )</small></h5>
-          <ul>
-            <li><strong>Resource Management - Pacific Saury:</strong>
-              <ul>
-                <li>Delivered presentations and prepared publications on the spatial-temporal variability in catch per unit effort of Pacific saury (<em>Cololabis saira</em>).</li>
-                <li>Developed and presented “Physically Consistent Super-Resolution of Pacific Saury Spatio-Temporal Distribution Using Multi-head Attention U-Net.”</li>
-              </ul>
-            </li>
-            <li><strong>Resource Management - Chub Mackerel:</strong>
-              <ul>
-                <li>Investigated the effects of Kuroshio Current variability and the Pacific Decadal Oscillation on the decline of Chub Mackerel (<em>Scomber japonicus</em>) catches.</li>
-              </ul>
-            </li>
-            <li><strong>GIS & Data Integration:</strong> Developed a GIS-based mapping system to analyze Neon Flying Squid catch and effort data from commission members.</li>
-            <li><strong>Compliance Analytics & Reporting:</strong>
-              <ul>
-                <li>Designed matching algorithms integrating VMS data, transshipment documents, and high seas boarding reports to detect non-compliance.</li>
-                <li>Produced comprehensive reports and compiled fisheries inventories for FAO’s monitoring system.</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Experience Block 3: Postdoctoral Fellowship -->
-        <div class="mb-4">
-          <h5>Postdoctoral Fellowship<br /><small>North Pacific Fisheries Commission & Tokyo University of Marine Science and Technology (2023–2024)</small></h5>
-          <ul>
-            <li><strong>Resource Management - Pacific Saury:</strong> Prepared a presentation and publication on the interannual to decadal relationship between Pacific saury catch variability and basin-scale ocean conditions.</li>
-            <li><strong>Resource Management - Chub Mackerel:</strong> Prepared work on catch and population variability in relation to ocean environmental changes.</li>
-            <li><strong>Catch Reporting Measures:</strong> Developed strategies to improve the accuracy of fisheries catch reporting.</li>
-            <li><strong>GIS-Based Mapping:</strong> Designed a mapping system for Neon Flying Squid catch and effort data.</li>
-            <li><strong>IUU Fishing Measures:</strong> Created algorithms to detect illegal fishing by integrating VMS and air surveillance data.</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Teaching Experiences -->
-      <section id="teaching" class="white-box mb-4">
-        <h3>Teaching Experiences</h3>
-        <ul>
-          <li>
-            <strong>Teaching Assistant, Seoul National University</strong><br />
-            Courses: Physical Oceanography (Spring 2019), Observation and Comprehension of Natural Disasters (Fall 2019, Spring 2020), Theory and Practice in Computational Sciences 1 (Spring 2022)
-          </li>
-          <li class="mt-2">
-            <strong>Lecturer, Seoul National University</strong><br />
-            Course: Computational Science: Subject Research (The Missing Semester of CS Education) (Spring 2021)
-          </li>
-          <li class="mt-2">
-            <strong>High School Science Teacher</strong><br />
-            Earth Science Teacher at Sehwa High School (2018–2019)
-          </li>
-        </ul>
-      </section>
-
-      <!-- Publications Section -->
-      <section id="publications" class="white-box mb-4">
-        <h3>Publications & Presentations</h3>
-        <p class="mb-2">
-          A selection of key publications and presentations is listed below. For a comprehensive list, please refer to the downloadable CV.
-        </p>
-        <ul>
-          <li>
-            <strong>Kim, J. &amp; Na, H.</strong> (2022). Interannual Variability of Yellowfin Tuna and Bigeye Tuna Catches in the Southwestern Tropical Indian Ocean. <em>Frontiers in Marine Science</em>, 9, 857405.
-          </li>
-          <li class="mt-2">
-            <strong>Kim, J., Na, H., Park, Y. G., &amp; Kim, Y. H.</strong> (2020). Potential Predictability of Skipjack Tuna Catches in the Western Central Pacific. <em>Scientific Reports</em>, 10, 3193.
-          </li>
-          <!-- Additional items can be added as needed -->
-        </ul>
-      </section>
-      
-      <!-- Co-workers Section -->
-      <section id="co-workers" class="white-box mb-4">
-        <h3>Co-workers</h3>
-        <div class="row">
-          <div class="col-md-3 col-6 text-center mb-3">
-            <img src="img/Hanna_Na.png" width="100" style="border-radius:70%" alt="Dr. Hanna Na" />
-            <p class="mt-2 mb-0">Dr. Hanna Na<br /><small>Professor, Seoul National University</small></p>
-          </div>
-          <div class="col-md-3 col-6 text-center mb-3">
-            <img src="img/Robert.jpeg" width="100" style="border-radius:70%" alt="Dr. Robert Day" />
-            <p class="mt-2 mb-0">Dr. Robert Day<br /><small>Executive Secretary, NPFC</small></p>
-          </div>
-          <div class="col-md-3 col-6 text-center mb-3">
-            <img src="img/Judy.jpeg" width="100" style="border-radius:70%" alt="Ms. Judy Dwyer" />
-            <p class="mt-2 mb-0">Ms. Judy Dwyer<br /><small>Compliance Manager, NPFC</small></p>
-          </div>
-          <div class="col-md-3 col-6 text-center mb-3">
-            <img src="img/Alex.jpeg" width="100" style="border-radius:70%" alt="Dr. Aleksandr Zavolokin" />
-            <p class="mt-2 mb-0">Dr. Aleksandr Zavolokin<br /><small>Science Manager, NPFC</small></p>
-          </div>
-        </div>
-      </section>
+    <div class="affiliation-strip container" aria-label="Professional affiliations">
+      <p class="eyebrow">Research & practice</p>
+      <div><span>CLS</span><small>Ocean Engineer · 2025–Present</small></div>
+      <div><span>North Pacific Fisheries Commission</span><small>Scientific advisory · 2023–2026</small></div>
+      <div><span>Seoul National University</span><small>Ph.D. in Physical Oceanography</small></div>
     </div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <section id="work" class="section container" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Science with a practical purpose.</h2></div>
+        <p class="section-intro">From the dynamics of the ocean to the decisions made on it — three areas that connect my research and applied work.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="card-top"><span class="eyebrow">Fisheries intelligence</span><span class="card-number">01</span></div>
+          <svg class="work-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M8 20C16 8 24 32 32 20S48 8 56 20M8 32C16 20 24 44 32 32S48 20 56 32M8 44C16 32 24 56 32 44S48 32 56 44" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Turning ocean data<br>into fishing intelligence.</h3>
+          <p>Automated daily Favorability Maps combine temperature, chlorophyll, currents, fronts, and weather to guide fishing-area selection and voyage planning.</p>
+          <div class="card-result"><strong>~150 vessels</strong><span>10+ commercial clients across five markets</span></div>
+          <p class="card-context">CLS · CATSAT · Pacific, Indian & Atlantic Oceans</p>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span class="eyebrow">Predictive modeling</span><span class="card-number">02</span></div>
+          <svg class="work-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M10 10V52H56M16 42L27 32L36 36L52 15" stroke="currentColor" stroke-width="1.5"/><circle cx="27" cy="32" r="3" fill="currentColor"/><circle cx="52" cy="15" r="3" fill="currentColor"/><path d="M36 36L52 32" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4"/></svg>
+          <h3>Connecting climate signals<br>to fisheries outlooks.</h3>
+          <p>Statistical and machine-learning models link environmental variability to catch patterns, with stochastic forecasting and physically consistent deep-learning super-resolution.</p>
+          <div class="card-result"><strong>2–3 months ahead</strong><span>Potential fishing-ground maps</span></div>
+          <p class="card-context">ENSO / IOD · Spatio-temporal models · Attention U-Net</p>
+        </article>
+        <article class="work-card">
+          <div class="card-top"><span class="eyebrow">Compliance & advisory</span><span class="card-number">03</span></div>
+          <svg class="work-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M16 16L48 20L42 48L16 16ZM16 16L12 45L42 48" stroke="currentColor" stroke-width="1.5"/><g fill="currentColor"><circle cx="16" cy="16" r="4"/><circle cx="48" cy="20" r="4"/><circle cx="42" cy="48" r="4"/><circle cx="12" cy="45" r="4"/></g></svg>
+          <h3>Making fisheries data<br>work across borders.</h3>
+          <p>Integrated VMS, AIS, transshipment, and inspection data to investigate inconsistencies and support evidence-based monitoring and international resource management.</p>
+          <div class="card-result"><strong>~9 million records</strong><span>VMS data processed and quality-controlled over three years</span></div>
+          <p class="card-context">NPFC · GIS products · Regulatory decision support</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Across research and industry.</h2></div><p class="section-intro">Scientific depth, operational context, and collaboration across France, Japan, and Asia-Pacific markets.</p></div>
+      <div class="experience-list">
+        <article class="experience-row">
+          <div class="experience-date">2025 — Present<span class="current-badge">Current role</span></div>
+          <div class="experience-body"><h3>Ocean Engineer</h3><p class="organization">Collecte Localisation Satellites (CLS) <span>· France & Japan</span></p><p>Part of the Sustainable Fisheries Management Team, delivering satellite-based fisheries intelligence and developing predictive features for CATSAT.</p><ul><li>Design and automate multi-source oceanographic workflows for commercial tuna-fishing operations.</li><li>Develop climate-informed catch forecasts, including ENSO/IOD-driven outlooks up to six months ahead.</li><li>Translate client operating needs into algorithms, data requirements, and decision-support features with scientific and technical teams.</li></ul></div>
+        </article>
+        <article class="experience-row">
+          <div class="experience-date">2024 — 2026</div>
+          <div class="experience-body"><h3>Data & Fisheries Science Advisor <span class="role-note">/ Consultant</span></h3><p class="organization">North Pacific Fisheries Commission <span>· Tokyo, Japan</span></p><p>Advised on resource management, compliance monitoring, and data governance, presenting analytical findings to representatives from 7+ member delegations.</p><ul><li>Linked vessel-tracking and operational records, identifying 100+ confirmed data inconsistencies and anomalous cases annually.</li><li>Built GIS tools for Pacific saury, chub mackerel, and neon flying squid catch-and-effort analysis.</li><li>Produced Fisheries, Transshipment, and VMS overviews and compiled commission inventories for FAO’s Fisheries and Resources Monitoring System.</li></ul></div>
+        </article>
+        <article class="experience-row">
+          <div class="experience-date">2023 — 2024</div>
+          <div class="experience-body"><h3>Postdoctoral Fellow</h3><p class="organization">NPFC & Tokyo University of Marine Science and Technology <span>· Tokyo, Japan</span></p><p>Investigated how basin-scale climate variability and Kuroshio dynamics influence Pacific saury and chub mackerel distribution and catch performance.</p><ul><li>Developed monitoring algorithms integrating vessel tracking and air surveillance for IUU-fishing detection.</li><li>Created geospatial products for consistent cross-jurisdiction comparisons and proposed improvements to catch reporting.</li></ul></div>
+        </article>
+      </div>
+      <details class="more-experience"><summary>Earlier experience & fieldwork <span aria-hidden="true">+</span></summary><div class="earlier-grid"><article><p class="eyebrow">2020–2023 / Observation systems</p><h3>Korea/Tsushima Strait</h3><p>Designed a replacement submarine-cable voltage observation system, data-analysis method, and cloud server to restore monitoring of volume transport across the strait.</p></article><article><p class="eyebrow">2018–2019 / Education</p><h3>Earth Science Teacher</h3><p>Taught Earth Science at Sehwa High School in Seoul, Republic of Korea.</p></article><article><p class="eyebrow">July 2022 / Field observations</p><h3>East China & Yellow Seas</h3><p>Conducted CTD, ADCP, and dissolved-oxygen sampling aboard R/V ONNURI.</p></article></div></details>
+    </section>
+
+    <section id="research" class="research-section" aria-labelledby="research-title">
+      <div class="container section">
+        <div class="section-heading"><div><p class="eyebrow">03 / Research</p><h2 id="research-title">Understanding a changing ocean.</h2></div><p class="section-intro">My research connects upper-ocean circulation, climate variability, and pelagic fisheries through observations and quantitative models.</p></div>
+        <div class="research-themes"><span>Ocean–climate variability</span><span>Fisheries forecasting</span><span>Machine learning</span><span>Geospatial analysis</span></div>
+        <div class="publication-heading"><h3>Selected publications</h3><span class="eyebrow">Peer-reviewed research</span></div>
+        <ol class="publications">
+          <li><span class="publication-year">2022</span><div><p class="publication-journal">Frontiers in Marine Science <span>· 9, 857405</span></p><h4><a href="https://doi.org/10.3389/fmars.2022.857405" target="_blank" rel="noopener noreferrer">Interannual Variability of Yellowfin Tuna (<i>Thunnus albacares</i>) and Bigeye Tuna (<i>Thunnus obesus</i>) Catches in the Southwestern Tropical Indian Ocean and Its Relationship to Climate Variability <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h4><p class="publication-authors"><strong>Jihwan Kim</strong> and Hanna Na</p></div></li>
+          <li><span class="publication-year">2020</span><div><p class="publication-journal">Scientific Reports <span>· 10, 3193</span></p><h4><a href="https://doi.org/10.1038/s41598-020-59947-8" target="_blank" rel="noopener noreferrer">Potential predictability of skipjack tuna (<i>Katsuwonus pelamis</i>) catches in the Western Central Pacific <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h4><p class="publication-authors"><strong>Jihwan Kim</strong>, Hanna Na, Young-Gyu Park, and Young Ho Kim</p></div></li>
+        </ol>
+        <details class="research-details"><summary>Selected presentations & research projects <span aria-hidden="true">+</span></summary><div class="research-detail-grid"><div><h3>Scientific & technical presentations</h3><ul><li><strong>2025 · NPFC, Osaka</strong><br>Vessel Monitoring System and Transshipment overviews.</li><li><strong>2024 · NPFC, Tokyo & Yokohama</strong><br>GIS mapping of neon flying squid fisheries; Kuroshio and PDO effects on chub mackerel catch.</li><li><strong>2022 · PICES & Ocean Sciences Meeting</strong><br>Korea/Tsushima Strait sea-level differences and upper-ocean current variability.</li><li><strong>2020 · AGU Fall Meeting</strong><br>Tuna catch variability and climate in the southwestern tropical Indian Ocean.</li></ul></div><div><h3>Funded research</h3><ul><li><strong>North Pacific western boundary currents</strong><br>Upstream–downstream connectivity, mesoscale eddies, and ecological impacts. National Research Foundation of Korea.</li><li><strong>Seychelles–Chagos Thermocline Ridge</strong><br>Upwelling and ecological variability. Korea Institute of Ocean Science and Technology.</li><li><strong>East Asian Seas Time-series · 2021–2023</strong><br>Physical and biological ocean variability in the East/Japan Sea.</li></ul></div></div></details>
+      </div>
+    </section>
+
+    <section id="background" class="section container" aria-labelledby="background-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / Background</p><h2 id="background-title">A foundation in science.</h2></div></div>
+      <div class="background-grid">
+        <div class="education-block"><h3 class="small-heading">Education</h3><article><span class="eyebrow">2019–2023</span><h4>Ph.D. in Physical Oceanography</h4><p>Seoul National University</p><small>School of Earth and Environmental Sciences</small></article><article><span class="eyebrow">2013–2018</span><h4>B.S. in Earth Science Education</h4><p>Seoul National University</p><small>College of Education</small></article></div>
+        <div><h3 class="small-heading">Tools & methods</h3><div class="skill-tags"><span>Python</span><span>MATLAB</span><span>SQL / MySQL</span><span>TensorFlow</span><span>PyTorch</span><span>GIS</span><span>Julia</span><span>Fortran</span></div><p class="skills-description">Statistical forecasting, regression, stochastic simulation, EOF/CSEOF analysis, deep learning, dashboards, and scientific visualization.</p><h3 class="small-heading language-heading">Languages</h3><p class="languages">Korean <span>Native</span><br>English & Japanese <span>Professional working proficiency</span></p></div>
+      </div>
+      <div class="background-secondary"><div><h3 class="small-heading">Recognition</h3><p><strong>JOISS Marine Science Big Data Competition</strong><br>2nd Prize in 2021 and 2022 · UN Ocean Decade Activity</p><p><strong>Succeeding Generations of Fundamental Sciences Fellowship</strong><br>Full scholarship · Seoul National University · 2019–2020</p></div><div><h3 class="small-heading">Teaching</h3><p><strong>Lecturer · Seoul National University</strong><br>Computational Science: Subject Research · Spring 2021</p><p><strong>Teaching Assistant · Seoul National University</strong><br>Physical Oceanography, Natural Disasters, and Computational Sciences · 2019–2022</p></div></div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container contact-inner"><div><p class="eyebrow">05 / Get in touch</p><h2 id="contact-title">Let’s connect.</h2><p>For research collaborations, analytics projects,<br class="desktop-break"> and conversations about sustainable fisheries.</p><a class="contact-email" href="mailto:tho3ov@gmail.com">tho3ov@gmail.com <span aria-hidden="true">↗</span></a><p class="company-email">For CLS-related enquiries: <a href="mailto:jkim@groupcls.com">jkim@groupcls.com</a></p></div><div id="cv" class="cv-downloads"><h3>Curriculum vitae</h3><p>Explore my background in more detail.</p><a class="download-link" href="CV_J_Kim.pdf" download><span>Academic CV <small>PDF</small></span><span aria-hidden="true">↓</span></a><a class="download-link" href="downloads/CV_Jihwan_Kim_Consulting.pdf" download><span>Consulting CV <small>PDF</small></span><span aria-hidden="true">↓</span></a><p class="word-downloads">Word versions: <a href="downloads/CV_J_Kim.docx" download>Academic</a> <span aria-hidden="true">/</span> <a href="downloads/CV_Jihwan_Kim_Consulting.docx" download>Consulting</a></p></div></div>
+    </section>
+  </main>
+  <footer class="container site-footer"><p>© 2026 Jihwan Kim</p><p>Ocean science. Informed decisions.</p><a href="#about">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
 </html>
