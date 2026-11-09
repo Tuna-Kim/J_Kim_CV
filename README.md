@@ -17,14 +17,14 @@ The repository root must contain `index.html` alongside `css`, `js`, `img`, and 
 - `js/main.js`: mobile navigation and active section indicator
 - `img/Jihwan_Kim_Portrait.jpg`: updated profile photo supplied as IMG_5149.jpg
 - `img/favicon.svg`: browser icon
-- `CV_J_Kim.pdf`: academic CV, exported from the supplied Word document
-- `downloads/`: consulting PDF and both original Word CVs
+- `CV_J_Kim.pdf`: academic CV, exported from the Word version in `downloads/`
+- `downloads/`: consulting PDF and both editable Word CVs
 
 The site uses local assets and system fonts and does not require Bootstrap, a CDN, analytics, or a backend.
 
 ## Update content
 
-Edit the text in `index.html`. Replace CV download files at the same paths to update downloads. The two supplied Word CVs are preserved unchanged; their PDF exports preserve their content. Website experience dates follow the consulting CV where the documents differ, including NPFC advisory work in 2024–2026.
+Edit the text in `index.html`. Replace CV download files at the same paths to update downloads. Update the two Word CVs and regenerate their matching PDF downloads together. Website experience dates follow the consulting CV where the documents differ, including NPFC advisory work in 2024–2026.
 
 ## Local preview
 

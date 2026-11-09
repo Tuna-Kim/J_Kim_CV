@@ -8,8 +8,8 @@
   <meta property="og:title" content="Jihwan Kim | Physical Oceanography &amp; Fisheries">
   <meta property="og:description" content="Jihwan Kim, physical oceanographer at CLS in Tokyo. Research on ocean circulation, climate variability, fisheries forecasting, and vessel monitoring.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style_J_Kim_CV_Page.css?v=20261004">
+  <link rel="icon" href="img/favicon.svg?v=20261109" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style_J_Kim_CV_Page.css?v=20261109">
   <script src="js/main.js" defer></script>
   <title>Jihwan Kim | Physical Oceanography &amp; Fisheries</title>
 </head>
@@ -31,38 +31,44 @@
   </header>
 
   <main id="main">
-    <section id="about" class="hero container" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <h1 id="hero-title">Jihwan Kim</h1>
-    <p class="hero-role">Physical oceanographer · Tokyo, Japan</p>
-    <p class="hero-description">I work as an Ocean Engineer at <abbr title="Collecte Localisation Satellites">CLS</abbr>, where I develop oceanographic analyses and forecasts for tuna fisheries. My research focuses on how ocean circulation and climate variability affect fish distribution and catches.</p>
-    <p class="hero-description">Previously, I worked with the North Pacific Fisheries Commission on fisheries research and vessel-monitoring data. I received my Ph.D. in Physical Oceanography from Seoul National University in 2023.</p>
-    <div class="hero-links">
-<a href="mailto:tho3ov@gmail.com">Email</a><a href="CV_J_Kim.pdf" download>Academic CV</a><a href="downloads/CV_Jihwan_Kim_Consulting.pdf" download>Consulting CV</a>
-</div>
-  </div>
-  <figure class="portrait"><img src="img/Jihwan_Kim_Portrait.jpg" alt="Jihwan Kim" width="864" height="1090" fetchpriority="high"></figure>
-</section>
+    <section id="about" class="hero-band" aria-labelledby="hero-title">
+      <div class="hero container">
+        <div class="hero-copy">
+          <h1 id="hero-title">Jihwan Kim</h1>
+          <p class="hero-role">Physical oceanographer · Tokyo, Japan</p>
+          <p class="hero-description">I work as an Ocean Engineer at <abbr title="Collecte Localisation Satellites">CLS</abbr>, where I build fishing-area maps for longline fleets and develop climate-based catch forecasts. My research focuses on how ocean circulation and climate variability affect fish distribution and catches.</p>
+          <p class="hero-description">Previously, I worked with the North Pacific Fisheries Commission on fisheries research and vessel-monitoring data. I received my Ph.D. in Physical Oceanography from Seoul National University in 2023.</p>
+          <div class="hero-links">
+            <a href="mailto:tho3ov@gmail.com">Email</a>
+            <a href="CV_J_Kim.pdf?v=20261109" download>Academic CV</a>
+            <a href="downloads/CV_Jihwan_Kim_Consulting.pdf?v=20261109" download>Consulting CV</a>
+          </div>
+        </div>
+        <figure class="portrait"><img src="img/Jihwan_Kim_Portrait.jpg" alt="Jihwan Kim" width="864" height="1090" fetchpriority="high"></figure>
+      </div>
+    </section>
 
     <section id="work" class="section container" aria-labelledby="work-title">
   <div class="section-heading"><h2 id="work-title">Research &amp; applied work</h2></div>
   <div class="project-list">
-    <article class="project-row">
+    <article id="rfmo-favorability-map" class="project-row">
       <div>
-<h3>Climate and tuna catch forecasts</h3>
-<p class="project-context">CLS / fisheries research</p>
-</div>
+        <h3>RFMO LL Favorability Map</h3>
+        <p class="project-context">CLS · Longline fisheries</p>
+      </div>
       <div>
-<p>I use statistical and machine-learning models to study the relationship between ocean conditions and tuna catches. ENSO and Indian Ocean Dipole signals support climate-informed catch forecasts <strong>up to 6 months</strong> ahead.</p>
-<p>My North Pacific research also includes stochastic forecasting of Pacific saury distribution and physically consistent super-resolution using a multi-head attention U-Net.</p>
-</div>
+        <p>I built a pipeline that combines monthly catch and effort records from regional fisheries management organizations (RFMOs) with daily satellite observations and ocean model data, including subsurface conditions. Five models generate daily fishing-area rankings at 1/12° resolution for yellowfin tuna, bigeye tuna, and swordfish across the Indian and Pacific Oceans.</p>
+        <p>I compare the maps with historical catch per unit effort at the monthly 5° resolution of the RFMO records.</p>
+      </div>
     </article>
-    <article class="project-row">
+    <article id="enso-iod-catch-alert" class="project-row">
       <div>
-<h3>Daily fishing-area maps</h3>
-<p class="project-context">CLS / CATSAT</p>
-</div>
-      <div><p>I develop automated Favorability Maps using sea-surface temperature, chlorophyll, currents, ocean fronts, and weather. These maps support fishing-area selection and voyage planning for more than 10 commercial clients and approximately 150 tuna vessels in the Pacific, Indian, and Atlantic Oceans.</p></div>
+        <h3>ENSO/IOD Catch Alert</h3>
+        <p class="project-context">CLS · Climate and catch forecasting</p>
+      </div>
+      <div>
+        <p>I use statistical and machine-learning models to study the relationship between ocean conditions and tuna catches. ENSO and Indian Ocean Dipole signals support climate-informed catch forecasts <strong>up to 6 months</strong> ahead.</p>
+      </div>
     </article>
     <article class="project-row">
       <div>
@@ -92,11 +98,10 @@
           <div class="experience-body">
 <h3>Ocean Engineer</h3>
 <p class="organization">Collecte Localisation Satellites (CLS) <span>· France &amp; Japan</span></p>
-<p>Part of the Sustainable Fisheries Management Team, delivering satellite-based fisheries intelligence and developing predictive features for CATSAT.</p>
+<p>Part of the Sustainable Fisheries Management Team, delivering satellite-based fisheries services to more than 10 commercial clients and approximately 150 tuna vessels in the Pacific, Indian, and Atlantic Oceans.</p>
 <ul>
-<li>Design and automate multi-source oceanographic workflows for commercial tuna-fishing operations.</li>
-<li>Develop climate-informed catch forecasts, including ENSO/IOD-driven outlooks up to six months ahead.</li>
-<li>Translate client operating needs into algorithms, data requirements, and decision-support features with scientific and technical teams.</li>
+<li>Develop daily longline favorability maps and seasonal catch alerts. See <a href="#work">selected projects</a>.</li>
+<li>Work with scientific and technical teams to turn vessel operators’ needs into data requirements, algorithms, and features for CATSAT.</li>
 </ul>
 </div>
         </article>
@@ -121,6 +126,7 @@
 <p class="organization">NPFC &amp; Tokyo University of Marine Science and Technology <span>· Tokyo, Japan</span></p>
 <p>Investigated how basin-scale climate variability and Kuroshio dynamics influence Pacific saury and chub mackerel distribution and catch performance.</p>
 <ul>
+<li>Used stochastic simulations to forecast Pacific saury distribution and a multi-head attention U-Net to generate fine-scale maps from coarse data.</li>
 <li>Developed monitoring algorithms integrating vessel tracking and air surveillance for IUU-fishing detection.</li>
 <li>Created geospatial products for consistent cross-jurisdiction comparisons and proposed improvements to catch reporting.</li>
 </ul>
@@ -230,8 +236,8 @@
 </div>
     <div id="cv" class="cv-downloads">
 <h3>Curriculum vitae</h3>
-<p><a href="CV_J_Kim.pdf" download>Academic CV</a> <span class="file-format">PDF</span> · <a href="downloads/CV_J_Kim.docx" download>Word</a></p>
-<p><a href="downloads/CV_Jihwan_Kim_Consulting.pdf" download>Consulting CV</a> <span class="file-format">PDF</span> · <a href="downloads/CV_Jihwan_Kim_Consulting.docx" download>Word</a></p>
+<p><a href="CV_J_Kim.pdf?v=20261109" download>Academic CV</a> <span class="file-format">PDF</span> · <a href="downloads/CV_J_Kim.docx?v=20261109" download>Word</a></p>
+<p><a href="downloads/CV_Jihwan_Kim_Consulting.pdf?v=20261109" download>Consulting CV</a> <span class="file-format">PDF</span> · <a href="downloads/CV_Jihwan_Kim_Consulting.docx?v=20261109" download>Word</a></p>
 </div>
   </div>
 </section></main>
