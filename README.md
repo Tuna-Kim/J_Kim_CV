@@ -24,7 +24,7 @@ The site uses local assets and system fonts and does not require Bootstrap, a CD
 
 ## Update content
 
-Edit the text in `index.html`. Replace CV download files at the same paths to update downloads. Update the two Word CVs and regenerate their matching PDF downloads together. Website experience dates follow the consulting CV where the documents differ, including NPFC advisory work in 2024–2026.
+Edit the text in `index.html`. Replace CV download files at the same paths to update downloads. Update the two Word CVs and regenerate their matching PDF downloads together. Experience dates were confirmed by Jihwan: NPFC consultancy March 2024–March 2026; TUMSAT fellowship September 2023–April 2025; concurrent NPFC fellowship September 2023–February 2024. RFMO LL and ENSO/IOD are internal pilots, started in April and July 2026 respectively.
 
 ## Local preview
 
